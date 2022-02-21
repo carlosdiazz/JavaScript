@@ -1,3 +1,9 @@
+const persona = {
+    nombre: 'Juan',
+    apellido: 'Perez',
+    edad: 30,
+}
+
 
 //? Ciclo For Basico
 console.log("Ciclo For Basico");
@@ -6,7 +12,10 @@ for(let i = 0 ; i < 10 ; i++ ){
 }
 
 //? Ciclo For In
-
+console.log("Ciclo For In");
+for(let i in persona){
+    console.log(persona[i]);
+}
 
 //? Ciclo For Of
 console.log("Ciclo For Of");
