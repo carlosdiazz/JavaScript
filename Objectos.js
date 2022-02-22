@@ -80,3 +80,23 @@ const persona3 = {
 //! Object.entries()
     const entradas = Object.entries(persona3);
     console.log(entradas);
+
+//Ejemplo con get y set
+
+const menu = {
+    _categoria: [],
+    _platillo: [],
+
+    get categoria(){
+        return this._categoria
+    },
+
+    set categoria(categoria){
+        this._categoria.push(categoria)
+    }
+
+}
+
+console.log(menu.categoria);
+menu.categoria = 'Carnes';
+console.log(menu.categoria);
