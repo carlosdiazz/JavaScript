@@ -36,3 +36,4 @@ console.log(frutas8);
 const frutas9 = frutas.includes("Naranja");
 console.log(frutas9);
 
+//? sort(), Devuelve los elementos de una matriz en su lugary devuelve la matriz ordenada.
