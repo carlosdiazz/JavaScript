@@ -37,3 +37,7 @@ const frutas9 = frutas.includes("Naranja");
 console.log(frutas9);
 
 //? sort(), Devuelve los elementos de una matriz en su lugary devuelve la matriz ordenada.
+
+//? findIndex(), devuelve el índice del primer elemento que cumpla la condición. o -1 si no lo encuentra.
+const frutas10 = frutas.findIndex(fruta => fruta.length > 6);
+console.log(frutas10);
