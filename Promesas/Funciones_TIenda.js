@@ -54,4 +54,22 @@ const enviarPedido = order => {
     })
 }
 
+const chequearDisponibilidad = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(()=>{
+
+            if(randomPosibilidades()){
+                resolve('Esta disponible')
+            }else{
+                reject('No esta disponible')
+            }
+
+        },2000)
+    })
+}
+
+const randomPosibilidades = () => Math.random() > .2
+
+console.log(randomPosibilidades())
+
 module.exports = {  chequearInventario, procesarPago, enviarPedido }
